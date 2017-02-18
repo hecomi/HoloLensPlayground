@@ -21,7 +21,7 @@ Tags
 Stencil 
 {
     Ref [_Mask]
-    Comp NotEqual
+    Comp Equal
 }
     
 CGPROGRAM
