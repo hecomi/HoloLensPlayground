@@ -1,6 +1,6 @@
 HoloLens Playground
 ===================
-My playground for HoloLens.
+My playground for HoloLens. This project uses [HoloToolkit-Unity](https://github.com/Microsoft/HoloToolkit-Unity) (not included).
 
 License
 -------
