@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.VR.WSA.Input;
 
-public class TapManager : MonoBehaviour
+public class TapAndAddWindow : MonoBehaviour
 {
     [SerializeField]
     GameObject prefab;
