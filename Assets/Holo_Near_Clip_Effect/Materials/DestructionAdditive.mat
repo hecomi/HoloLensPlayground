@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Magic
+  m_Name: DestructionAdditive
   m_Shader: {fileID: 4800000, guid: 881d5d8009bf24d45a1a9f96d815962e, type: 3}
   m_ShaderKeywords: _EMISSION _METHOD_PROPERTY
   m_LightmapFlags: 1

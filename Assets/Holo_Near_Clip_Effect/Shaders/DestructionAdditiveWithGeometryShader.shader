@@ -59,20 +59,20 @@ struct g2f
     UNITY_VERTEX_OUTPUT_STEREO
 };
 
-inline fixed rand(fixed2 seed)
+inline float rand(float2 seed)
 {
-    return frac(sin(dot(seed.xy, fixed2(12.9898, 78.233))) * 43758.5453);
+    return frac(sin(dot(seed.xy, float2(12.9898, 78.233))) * 43758.5453);
 }
 
-fixed3 rotate(fixed3 p, fixed3 rotation)
+float3 rotate(float3 p, float3 rotation)
 {
-    fixed3 a = normalize(rotation);
-    fixed angle = length(rotation);
+    float3 a = normalize(rotation);
+    float angle = length(rotation);
     if (abs(angle) < 0.001) return p;
-    fixed s = sin(angle);
-    fixed c = cos(angle);
-    fixed r = 1.0 - c;
-    fixed3x3 m = fixed3x3(
+    float s = sin(angle);
+    float c = cos(angle);
+    float r = 1.0 - c;
+    float3x3 m = float3x3(
         a.x * a.x * r + c,
         a.y * a.x * r + a.z * s,
         a.z * a.x * r - a.y * s,
@@ -94,7 +94,7 @@ appdata_t vert(appdata_t v)
 [maxvertexcount(3)]
 void geom(triangle appdata_t input[3], inout TriangleStream<g2f> stream)
 {
-    fixed3 center = (input[0].vertex + input[1].vertex + input[2].vertex) * 0.33334f;
+    float3 center = (input[0].vertex + input[1].vertex + input[2].vertex) * 0.33334f;
 
     for (int i = 0; i < 3; ++i)
     {
@@ -104,16 +104,16 @@ void geom(triangle appdata_t input[3], inout TriangleStream<g2f> stream)
         UNITY_SETUP_INSTANCE_ID(v);
         UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o);
 
-        fixed r = 2 * (rand(center.xy) - 0.5);
-        fixed3 r3 = fixed3(r, r, r);
-
 #ifdef _METHOD_PROPERTY
         fixed destruction = _Destruction;
 #else
-        fixed4 worldPos = mul(unity_ObjectToWorld, v.vertex);
-        fixed3 dist = length(_WorldSpaceCameraPos - worldPos);
+        float4 worldPos = mul(unity_ObjectToWorld, v.vertex);
+        float3 dist = length(_WorldSpaceCameraPos - worldPos);
         fixed destruction = clamp((_StartDistance - dist) / (_StartDistance - _EndDistance), 0.0, 1.0);
 #endif
+
+        fixed r = 2 * (rand(center.xy) - 0.5);
+        fixed3 r3 = fixed3(r, r, r);
 
         // Scale
         v.vertex.xyz = (v.vertex.xyz - center) * (1.0 - destruction * _ScaleFactor) + center;

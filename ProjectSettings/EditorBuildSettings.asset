@@ -4,6 +4,4 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 1
-    path: Assets/Holo_Spatial_Shading/Scenes/Random Tiled Wall.unity
+  m_Scenes: []
