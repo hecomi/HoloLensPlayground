@@ -19,6 +19,7 @@ ExportedObj/
 *.pidb
 *.booproj
 *.svd
+*.db
 
 
 # Unity3D generated meta files
@@ -34,3 +35,5 @@ sysinfo.txt
 # For This Project
 Assets/3rd\ Parties/
 Wiki
+UWP
+Assets/WSATestCertificate.pfx*

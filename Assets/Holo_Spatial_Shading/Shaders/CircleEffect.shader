@@ -1,10 +1,13 @@
-﻿Shader "HoloLens/SpatialMapping/TiledWall"
+﻿Shader "HoloLens/SpatialMapping/CircleEffect"
 {
 
 Properties
 {
     _Color("Color", Color) = (1, 1, 1, 1)
-    _TilesPerMeter("Tiles per Meter", Float) = 10
+    _Intensity("Intensity", Range(0, 10)) = 2
+    _Height("Height", Range(0, 1)) = 0.1
+    _DecayDist("Decay Distance", Float) = 2
+    _LinesPerMeter("Lines per Meter", Float) = 25
     _Mask("Mask", Int) = 1
 }
 
@@ -15,17 +18,18 @@ CGINCLUDE
 struct v2f
 {
     float4 vertex : SV_POSITION;
-    float3 worldPos : TEXCOORD0;
+    fixed3 worldPos : TEXCOORD0;
     UNITY_VERTEX_OUTPUT_STEREO
 };
 
-float _TilesPerMeter;
+fixed _LinesPerMeter;
+fixed _Intensity;
+fixed _Height;
 fixed4 _Color;
-
-inline float toIntensity(float3 pos)
-{
-    return frac(length(pos) - _Time.y);
-}
+fixed3 _Center;
+fixed _Radius;
+fixed _Width;
+fixed _DecayDist;
 
 v2f vert(appdata_base v)
 {
@@ -39,10 +43,16 @@ v2f vert(appdata_base v)
 
 fixed4 frag(v2f i) : SV_Target
 {
-    float3 worldIndex = floor(i.worldPos.xyz * _TilesPerMeter);
-    float3 boxelCenter = worldIndex / _TilesPerMeter;
-    float intensity = toIntensity(boxelCenter);
-    return _Color * intensity;
+    fixed3 worldIndex;
+    modf(i.worldPos.xyz * _LinesPerMeter, worldIndex);
+    fixed3 centerOfBoxel = worldIndex / _LinesPerMeter;
+    fixed dist = length(_Center - centerOfBoxel);
+    fixed diff = exp(-abs(_Radius - dist) / _Width);
+
+    fixed3 rgb = diff * _Color.rgb;
+    fixed a = (rgb.r + rgb.b + rgb.g) * _Color.a * exp(-dist / _DecayDist) * _Intensity;
+
+    return fixed4(rgb, a);
 }
 
 ENDCG

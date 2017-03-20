@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: TiledWall
-  m_Shader: {fileID: 4800000, guid: 1d99149e00ec31141860d0c7b66415fe, type: 3}
+  m_Name: Circle Effect
+  m_Shader: {fileID: 4800000, guid: 2644c26b70f0b834495c36b650bde2be, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_CustomRenderQueue: -1
@@ -18,16 +18,13 @@ Material:
     m_Floats:
     - first:
         name: _DecayDist
-      second: 0.5
+      second: 2
     - first:
         name: _Height
-      second: 0.2
+      second: 0.1
     - first:
         name: _Intensity
-      second: 1
-    - first:
-        name: _LineScale
-      second: 5
+      second: 2
     - first:
         name: _LinesPerMeter
       second: 25

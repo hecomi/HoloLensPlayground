@@ -247,7 +247,7 @@ Prefab:
         type: 2}
       propertyPath: RoomModel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 100006, guid: c35ec8112ca03e04e904b72932bc97c5, type: 3}
     - target: {fileID: 114000011154029958, guid: 2ed75ffdf9031c94e8bce4b3d17b9928,
         type: 2}
       propertyPath: castShadows

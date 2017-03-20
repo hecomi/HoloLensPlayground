@@ -13,7 +13,6 @@ CGINCLUDE
 struct v2f
 {
     float4 vertex : SV_POSITION;
-    float4 worldPos: TEXCOORD0;
     UNITY_VERTEX_OUTPUT_STEREO
 };
 

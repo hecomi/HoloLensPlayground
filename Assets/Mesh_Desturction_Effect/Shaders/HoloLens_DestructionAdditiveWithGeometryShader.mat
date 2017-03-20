@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: HoloLens_DestructionAdditiveWithGeometryShader
+  m_Shader: {fileID: 4800000, guid: 12ccf4fb80c1d9b45be0fbb1ff6763c0, type: 3}
+  m_ShaderKeywords: _METHOD_CAMERA
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _MainTex
+      second:
+        m_Texture: {fileID: 2800000, guid: 1f7e99315a1119e4a91f6ff673d1da28, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: _AlphaFactor
+      second: 1
+    - first:
+        name: _Destruction
+      second: 0.774
+    - first:
+        name: _EndDistance
+      second: 0.3
+    - first:
+        name: _InvFade
+      second: 1
+    - first:
+        name: _Method
+      second: 1
+    - first:
+        name: _PositionFactor
+      second: 0.218
+    - first:
+        name: _RotationFactor
+      second: 1
+    - first:
+        name: _ScaleFactor
+      second: 1
+    - first:
+        name: _StartDistance
+      second: 0.6
+    m_Colors:
+    - first:
+        name: _TintColor
+      second: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}

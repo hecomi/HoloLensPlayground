@@ -56,4 +56,10 @@ public class SpatialMeshModifier : Singleton<SpatialMeshModifier>
         center = pos;
         time = 0f;
     }
+
+    [ContextMenu("Test")]
+    void Test()
+    {
+        Fire(Camera.main.transform.position);
+    }
 }
