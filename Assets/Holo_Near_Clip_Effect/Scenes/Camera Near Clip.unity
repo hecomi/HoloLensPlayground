@@ -296,6 +296,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: aad48827a47ea6d46859ff866e8c3ec0, type: 3}
+      propertyPath: m_Name
+      value: Polygon Destruction
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aad48827a47ea6d46859ff866e8c3ec0, type: 3}
   m_IsPrefabParent: 0
@@ -356,7 +360,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: aad48827a47ea6d46859ff866e8c3ec0, type: 3}
       propertyPath: m_Name
-      value: Plane (1)
+      value: Vertex Color Fade
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aad48827a47ea6d46859ff866e8c3ec0, type: 3}
@@ -418,7 +422,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: aad48827a47ea6d46859ff866e8c3ec0, type: 3}
       propertyPath: m_Name
-      value: Plane (2)
+      value: Normal
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aad48827a47ea6d46859ff866e8c3ec0, type: 3}
