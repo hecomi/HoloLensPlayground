@@ -1,4 +1,4 @@
-﻿Shader "HoloLens/DestructionAdditive"
+﻿Shader "HoloLens/NearClip/DestructionAdditive"
 {
 
 Properties

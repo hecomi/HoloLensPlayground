@@ -1,4 +1,4 @@
-﻿Shader "HoloLens/DestructionAdditiveWithGeometryShader"
+﻿Shader "HoloLens/NearClip/DestructionAdditiveGS"
 {
 
 Properties
@@ -39,11 +39,8 @@ fixed _EndDistance;
 struct appdata_t 
 {
     float4 vertex : POSITION;
-    float4 normal : NORMAL;
     fixed4 color : COLOR;
     float2 texcoord : TEXCOORD0;
-    fixed2 texcoord1 : TEXCOORD1;
-    fixed3 texcoord2 : TEXCOORD2;
     UNITY_VERTEX_INPUT_INSTANCE_ID
 };
 
@@ -94,8 +91,16 @@ appdata_t vert(appdata_t v)
 [maxvertexcount(3)]
 void geom(triangle appdata_t input[3], inout TriangleStream<g2f> stream)
 {
-    float3 center = (input[0].vertex + input[1].vertex + input[2].vertex) * 0.33334f;
+    float3 center = (input[0].vertex + input[1].vertex + input[2].vertex) * 0.33333;
 
+    float3 vec1 = input[1].vertex - input[0].vertex;
+    float3 vec2 = input[2].vertex - input[0].vertex;
+    float3 normal = normalize(cross(vec1, vec2));
+
+    fixed r = 2 * (rand(center.xy) - 0.5);
+    fixed3 r3 = fixed3(r, r, r);
+
+    [unroll]
     for (int i = 0; i < 3; ++i)
     {
         appdata_t v = input[i];
@@ -112,15 +117,12 @@ void geom(triangle appdata_t input[3], inout TriangleStream<g2f> stream)
         fixed destruction = clamp((_StartDistance - dist) / (_StartDistance - _EndDistance), 0.0, 1.0);
 #endif
 
-        fixed r = 2 * (rand(center.xy) - 0.5);
-        fixed3 r3 = fixed3(r, r, r);
-
         // Scale
         v.vertex.xyz = (v.vertex.xyz - center) * (1.0 - destruction * _ScaleFactor) + center;
         // Rotation
         v.vertex.xyz = rotate(v.vertex.xyz - center, r3 * destruction * _RotationFactor) + center;
         // Move
-        v.vertex.xyz += v.normal.xyz * destruction * _PositionFactor * r3;
+        v.vertex.xyz += normal * destruction * _PositionFactor * r3;
 
         o.vertex = UnityObjectToClipPos(v.vertex);
 #ifdef SOFTPARTICLES_ON
@@ -161,8 +163,8 @@ Tags
 {
     "RenderType" = "Transparent"
     "Queue" = "Transparent"
-    "IgnoreProjector"="True"
-    "PreviewType"="Plane"
+    "IgnoreProjector" = "True"
+    "PreviewType" = "Plane"
 }
 
 Blend SrcAlpha One

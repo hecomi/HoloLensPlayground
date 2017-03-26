@@ -6,9 +6,9 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: DestructionAdditiveWithGeometryShader
-  m_Shader: {fileID: 4800000, guid: 12ccf4fb80c1d9b45be0fbb1ff6763c0, type: 3}
-  m_ShaderKeywords: _METHOD_CAMERA
+  m_Name: NearClip_AlphaAdditive
+  m_Shader: {fileID: 4800000, guid: 62ff9b3be715ab14cbd2133a1f3505aa, type: 3}
+  m_ShaderKeywords: _METHOD_PROPERTY
   m_LightmapFlags: 5
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -23,12 +23,6 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - first:
-        name: _AlphaFactor
-      second: 1
-    - first:
-        name: _Destruction
-      second: 0.774
-    - first:
         name: _EndDistance
       second: 0.85
     - first:
@@ -36,20 +30,11 @@ Material:
       second: 1
     - first:
         name: _Method
-      second: 1
-    - first:
-        name: _PositionFactor
-      second: 0.218
-    - first:
-        name: _RotationFactor
-      second: 1
-    - first:
-        name: _ScaleFactor
-      second: 1
+      second: 0
     - first:
         name: _StartDistance
       second: 1
     m_Colors:
     - first:
         name: _TintColor
-      second: {r: 0, g: 0.591, b: 1, a: 0.78431374}
+      second: {r: 0.05709344, g: 0.64705884, b: 0.066, a: 0.78431374}
