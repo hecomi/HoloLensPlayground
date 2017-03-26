@@ -4,10 +4,10 @@
 Properties
 {
     [KeywordEnum(Property, Camera)]
-	_Method("DestructionMethod", Float) = 0
-	_TintColor("Tint Color", Color) = (0.5, 0.5, 0.5, 0.5)
-	_MainTex("Particle Texture", 2D) = "white" {}
-	_InvFade("Soft Particles Factor", Range(0.01, 3.0)) = 1.0
+    _Method("DestructionMethod", Float) = 0
+    _TintColor("Tint Color", Color) = (0.5, 0.5, 0.5, 0.5)
+    _MainTex("Particle Texture", 2D) = "white" {}
+    _InvFade("Soft Particles Factor", Range(0.01, 3.0)) = 1.0
     _Destruction("Destruction Factor", Range(0.0, 1.0)) = 0.0
     _PositionFactor("Position Factor", Range(0.0, 1.0)) = 0.2
     _RotationFactor("Rotation Factor", Range(0.0, 1.0)) = 1.0

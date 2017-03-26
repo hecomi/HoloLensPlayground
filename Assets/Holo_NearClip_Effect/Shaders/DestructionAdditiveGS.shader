@@ -4,10 +4,10 @@
 Properties
 {
     [KeywordEnum(Property, Camera)]
-	_Method("DestructionMethod", Float) = 0
-	_TintColor("Tint Color", Color) = (0.5, 0.5, 0.5, 0.5)
-	_MainTex("Particle Texture", 2D) = "white" {}
-	_InvFade("Soft Particles Factor", Range(0.01, 3.0)) = 1.0
+    _Method("DestructionMethod", Float) = 0
+    _TintColor("Tint Color", Color) = (0.5, 0.5, 0.5, 0.5)
+    _MainTex("Particle Texture", 2D) = "white" {}
+    _InvFade("Soft Particles Factor", Range(0.01, 3.0)) = 1.0
     _Destruction("Destruction Factor", Range(0.0, 1.0)) = 0.0
     _PositionFactor("Position Factor", Range(0.0, 1.0)) = 0.2
     _RotationFactor("Rotation Factor", Range(0.0, 1.0)) = 1.0
@@ -91,11 +91,19 @@ appdata_t vert(appdata_t v)
 [maxvertexcount(3)]
 void geom(triangle appdata_t input[3], inout TriangleStream<g2f> stream)
 {
-    float3 center = (input[0].vertex + input[1].vertex + input[2].vertex) * 0.33333;
+    float3 center = (input[0].vertex + input[1].vertex + input[2].vertex).xyz / 3;
 
     float3 vec1 = input[1].vertex - input[0].vertex;
     float3 vec2 = input[2].vertex - input[0].vertex;
     float3 normal = normalize(cross(vec1, vec2));
+
+#ifdef _METHOD_PROPERTY
+    fixed destruction = _Destruction;
+#else
+    float4 worldPos = mul(unity_ObjectToWorld, float4(center, 1.0));
+    float3 dist = length(_WorldSpaceCameraPos - worldPos);
+    fixed destruction = clamp((_StartDistance - dist) / (_StartDistance - _EndDistance), 0.0, 1.0);
+#endif
 
     fixed r = 2 * (rand(center.xy) - 0.5);
     fixed3 r3 = fixed3(r, r, r);
@@ -109,13 +117,14 @@ void geom(triangle appdata_t input[3], inout TriangleStream<g2f> stream)
         UNITY_SETUP_INSTANCE_ID(v);
         UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o);
 
+        /*
 #ifdef _METHOD_PROPERTY
         fixed destruction = _Destruction;
 #else
         float4 worldPos = mul(unity_ObjectToWorld, v.vertex);
         float3 dist = length(_WorldSpaceCameraPos - worldPos);
         fixed destruction = clamp((_StartDistance - dist) / (_StartDistance - _EndDistance), 0.0, 1.0);
-#endif
+#endif*/
 
         // Scale
         v.vertex.xyz = (v.vertex.xyz - center) * (1.0 - destruction * _ScaleFactor) + center;

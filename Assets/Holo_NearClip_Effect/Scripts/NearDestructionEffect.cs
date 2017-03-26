@@ -11,7 +11,7 @@ public class NearDestructionEffect : MonoBehaviour
         var meshFilter = GetComponent<MeshFilter>();
         meshFilter.mesh = GetDestructableMesh(meshFilter); // clone if needed
         var mat = GetComponent<Renderer>().material; // just clone
-	}
+    }
 
     Mesh GetDestructableMesh(MeshFilter meshFilter)
     {
