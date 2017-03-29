@@ -117,20 +117,8 @@ void geom(triangle appdata_t input[3], inout TriangleStream<g2f> stream)
         UNITY_SETUP_INSTANCE_ID(v);
         UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o);
 
-        /*
-#ifdef _METHOD_PROPERTY
-        fixed destruction = _Destruction;
-#else
-        float4 worldPos = mul(unity_ObjectToWorld, v.vertex);
-        float3 dist = length(_WorldSpaceCameraPos - worldPos);
-        fixed destruction = clamp((_StartDistance - dist) / (_StartDistance - _EndDistance), 0.0, 1.0);
-#endif*/
-
-        // Scale
         v.vertex.xyz = (v.vertex.xyz - center) * (1.0 - destruction * _ScaleFactor) + center;
-        // Rotation
         v.vertex.xyz = rotate(v.vertex.xyz - center, r3 * destruction * _RotationFactor) + center;
-        // Move
         v.vertex.xyz += normal * destruction * _PositionFactor * r3;
 
         o.vertex = UnityObjectToClipPos(v.vertex);
