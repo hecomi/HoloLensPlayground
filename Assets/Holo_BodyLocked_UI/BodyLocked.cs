@@ -16,6 +16,9 @@ public class BodyLocked : MonoBehaviour
     float minDistance = 0.5f;
 
     [SerializeField]
+    float minScaleRatio = 0.5f;
+
+    [SerializeField]
     float moveThresholdAngle = 10f;
 
     [Header("Smoothness")]
@@ -51,6 +54,7 @@ public class BodyLocked : MonoBehaviour
     bool isMoving_ = false;
     float distance_ = 2f;
     Quaternion rotation_ = Quaternion.identity;
+    Vector3 initScale_ = Vector3.one;
     #endregion
 
     void Start()
@@ -58,6 +62,7 @@ public class BodyLocked : MonoBehaviour
         var camera = Camera.main.transform;
         rotation_ = Quaternion.LookRotation(camera.forward, Vector3.up);
         distance_ = maxDistance;
+        initScale_ = transform.localScale;
 
         transform.position = camera.position + (rotation_ * Vector3.forward) * distance_;
         transform.rotation = Quaternion.LookRotation(-camera.forward, Vector3.up);
@@ -122,6 +127,7 @@ public class BodyLocked : MonoBehaviour
 
         transform.position = camera.position + (currentDir * distance_);
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRot, 1f - rotateSmoothness);
+        transform.localScale = initScale_ * (1f - minScaleRatio * (1f - Mathf.Clamp((distance_ - minDistance) / (maxDistance - minDistance), 0f, 1f)));
     }
 }
 
