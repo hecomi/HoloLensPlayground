@@ -37,9 +37,6 @@ public class BodyLocked : MonoBehaviour
     bool checkCollision = true;
 
     [SerializeField]
-    float radius = 0.1f;
-
-    [SerializeField]
     float floorCeilingAngle = 80f;
 
     [SerializeField]
@@ -52,10 +49,13 @@ public class BodyLocked : MonoBehaviour
     LayerMask collisionLayerMask = 1 << 31;
 
     [SerializeField]
+    float rayRadius = 0.1f;
+
+    [SerializeField]
     int rayNum = 3;
 
     [SerializeField]
-    float noise = 0.03f;
+    float rayNoise = 0.03f;
     #endregion
 
     #region(Private members)
@@ -113,9 +113,9 @@ public class BodyLocked : MonoBehaviour
 
         for (int i = 0; i < rayNum; ++i) {
             RaycastHit hit;
-            var noiseRadius = Random.Range(0f, noise) * radius;
-            if (Physics.SphereCast(camera.position, radius + noiseRadius, direction_, out hit, maxDistance, collisionLayerMask)) {
-                averageDistance += hit.distance + (radius + noiseRadius) - offsetFromCollision;
+            var noiseRadius = Random.Range(0f, rayNoise) * rayRadius;
+            if (Physics.SphereCast(camera.position, rayRadius + noiseRadius, direction_, out hit, maxDistance, collisionLayerMask)) {
+                averageDistance += hit.distance + (rayRadius + noiseRadius) - offsetFromCollision;
                 averageNormal += hit.normal;
                 ++hitNum;
             }
