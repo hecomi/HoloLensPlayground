@@ -93,7 +93,7 @@ fixed4 occlusion_frag(v2f IN) : SV_Target
 {
     fixed4 c = SampleSpriteTexture(IN.texcoord) * IN.color * _OcclusionColor;
     c.rgb *= c.a;
-    return ;
+    return c;
 }
 
 ENDCG
