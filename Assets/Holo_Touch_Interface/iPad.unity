@@ -1,0 +1,1551 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 7
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 0
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 7
+  m_GIWorkflowMode: 0
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_TemporalCoherenceThreshold: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 1
+    m_EnableRealtimeLightmaps: 1
+  m_LightmapEditorSettings:
+    serializedVersion: 4
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_TextureWidth: 1024
+    m_TextureHeight: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_DirectLightInLightProbes: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+  m_LightingDataAsset: {fileID: 0}
+  m_RuntimeCPUUsage: 25
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    accuratePlacement: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!4 &27489292 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400122, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!1 &32049831 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100100, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &32049833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 32049831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c558fd192c842604581b6a2d16bf1542, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  push: {fileID: 2107253523}
+  onPressed:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  onReleased:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+--- !u!1 &48102371 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100038, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!1 &84276640 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100112, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &84276642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 84276640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae3f5913c2d909e4cbc92f56ebabd61a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggleInner: {fileID: 1383044891}
+  onValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Hecomi.HoloLensPlayground.Toggle+ValueChangeEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!1 &131401714 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100314, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!1 &202161148 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100350, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &202161150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 202161148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae3f5913c2d909e4cbc92f56ebabd61a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggleInner: {fileID: 131401714}
+  onValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Hecomi.HoloLensPlayground.Toggle+ValueChangeEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!1 &213985838 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100056, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!4 &237035707 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400130, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!1 &269502269 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100378, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!1 &285079788 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100082, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &285079790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 285079788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c558fd192c842604581b6a2d16bf1542, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  push: {fileID: 761239736}
+  onPressed:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  onReleased:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+--- !u!4 &322150734 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400126, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!1 &444775341 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100052, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!1 &504063834 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100054, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!1 &521626171 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100090, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &521626173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 521626171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c558fd192c842604581b6a2d16bf1542, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  push: {fileID: 504063834}
+  onPressed:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  onReleased:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+--- !u!1 &522793201 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100134, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &522793203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 522793201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4f4196be23a5a8409417739d76afd6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bar: {fileID: 713142665}
+  onValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Hecomi.HoloLensPlayground.Fader+ValueChangeEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!1 &560842910 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100084, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &560842912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 560842910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c558fd192c842604581b6a2d16bf1542, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  push: {fileID: 1289704986}
+  onPressed:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  onReleased:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+--- !u!1 &576315591 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100088, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &576315593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 576315591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c558fd192c842604581b6a2d16bf1542, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  push: {fileID: 444775341}
+  onPressed:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  onReleased:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+--- !u!1 &595870523 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100094, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &595870525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 595870523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c558fd192c842604581b6a2d16bf1542, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  push: {fileID: 1825766183}
+  onPressed:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  onReleased:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+--- !u!1 &606256171 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100140, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &606256173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 606256171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4f4196be23a5a8409417739d76afd6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bar: {fileID: 237035707}
+  onValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Hecomi.HoloLensPlayground.Fader+ValueChangeEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!1 &633836669 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100028, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!1 &648287087 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100046, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!1 &711804147
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 711804149}
+  - component: {fileID: 711804148}
+  m_Layer: 0
+  m_Name: Directional Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &711804148
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 711804147}
+  m_Enabled: 1
+  serializedVersion: 7
+  m_Type: 1
+  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &711804149
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 711804147}
+  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!4 &713142665 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400124, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!1 &761239736 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100034, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!1 &765655517 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100068, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!1 &827361696 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100136, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &827361698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 827361696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4f4196be23a5a8409417739d76afd6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bar: {fileID: 322150734}
+  onValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Hecomi.HoloLensPlayground.Fader+ValueChangeEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!1 &839140299 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100096, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &839140301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 839140299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c558fd192c842604581b6a2d16bf1542, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  push: {fileID: 2071052848}
+  onPressed:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  onReleased:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+--- !u!1 &879537741 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100376, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &879537743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 879537741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7291ca3a43dd084090d6e20a09e260f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  push1: {fileID: 1106875394}
+  push2: {fileID: 839140301}
+  push3: {fileID: 1465901429}
+  push4: {fileID: 32049833}
+  push5: {fileID: 1263408542}
+  push6: {fileID: 1782766000}
+  push7: {fileID: 956183698}
+  push8: {fileID: 1196194978}
+  push9: {fileID: 1774323231}
+  push10: {fileID: 285079790}
+  push11: {fileID: 560842912}
+  push12: {fileID: 1125110279}
+  push13: {fileID: 576315593}
+  push14: {fileID: 521626173}
+  push15: {fileID: 1702601491}
+  push16: {fileID: 595870525}
+  toggle1: {fileID: 202161150}
+  toggle2: {fileID: 1518819111}
+  toggle3: {fileID: 1801959880}
+  toggle4: {fileID: 899425590}
+--- !u!1 &899425588 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100368, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &899425590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 899425588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae3f5913c2d909e4cbc92f56ebabd61a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggleInner: {fileID: 1095954186}
+  onValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Hecomi.HoloLensPlayground.Toggle+ValueChangeEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!1 &933128763
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 933128767}
+  - component: {fileID: 933128765}
+  m_Layer: 0
+  m_Name: OscServer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &933128765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 933128763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8522f05e64ab2be45bd708078a10e9cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  listenPort: 3333
+  handler: {fileID: 1857112803}
+--- !u!4 &933128767
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 933128763}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.13304625, y: 0.14206338, z: 0.15964183}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &934311630 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100020, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &934311632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 934311630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae3f5913c2d909e4cbc92f56ebabd61a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggleInner: {fileID: 997485332}
+  onValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Hecomi.HoloLensPlayground.Toggle+ValueChangeEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!1 &948554181 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100044, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!1 &956183696 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100106, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &956183698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 956183696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c558fd192c842604581b6a2d16bf1542, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  push: {fileID: 1098195021}
+  onPressed:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  onReleased:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+--- !u!1 &997485332 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100030, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!1 &1025190864 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100318, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!1 &1042726554 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100316, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!1 &1072740778 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100014, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &1072740780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1072740778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae3f5913c2d909e4cbc92f56ebabd61a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggleInner: {fileID: 1536866727}
+  onValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Hecomi.HoloLensPlayground.Toggle+ValueChangeEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!1 &1095954186 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100320, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!1 &1098195021 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100042, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!1 &1101701237
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1101701242}
+  - component: {fileID: 1101701241}
+  - component: {fileID: 1101701240}
+  - component: {fileID: 1101701239}
+  - component: {fileID: 1101701238}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &1101701238
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1101701237}
+  m_Enabled: 1
+--- !u!124 &1101701239
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1101701237}
+  m_Enabled: 1
+--- !u!92 &1101701240
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1101701237}
+  m_Enabled: 1
+--- !u!20 &1101701241
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1101701237}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.5
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+  m_StereoMirrorMode: 0
+--- !u!4 &1101701242
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1101701237}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1106875392 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100080, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &1106875394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1106875392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c558fd192c842604581b6a2d16bf1542, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  push: {fileID: 1770366010}
+  onPressed:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  onReleased:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+--- !u!1 &1114094058 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100016, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &1114094060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1114094058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae3f5913c2d909e4cbc92f56ebabd61a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggleInner: {fileID: 1985325032}
+  onValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Hecomi.HoloLensPlayground.Toggle+ValueChangeEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!1 &1125110277 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100086, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &1125110279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1125110277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c558fd192c842604581b6a2d16bf1542, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  push: {fileID: 1731027553}
+  onPressed:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  onReleased:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+--- !u!1 &1147731508 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100120, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!1 &1196194976 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100108, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &1196194978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1196194976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c558fd192c842604581b6a2d16bf1542, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  push: {fileID: 948554181}
+  onPressed:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  onReleased:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+--- !u!1 &1263408540 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100102, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &1263408542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1263408540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c558fd192c842604581b6a2d16bf1542, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  push: {fileID: 48102371}
+  onPressed:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  onReleased:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+--- !u!1 &1273704916 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100374, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &1273704918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1273704916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05670187d5a50ed4cb9a6a1c4374925a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fader1_: {fileID: 1465610872}
+  fader2_: {fileID: 522793203}
+  fader3_: {fileID: 827361698}
+  fader4_: {fileID: 1360948194}
+  fader5_: {fileID: 606256173}
+  toggle1_: {fileID: 84276642}
+  toggle2_: {fileID: 1795603015}
+  toggle3_: {fileID: 2115598808}
+  toggle4_: {fileID: 1842523208}
+--- !u!1 &1289704986 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100048, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!1 &1322194347 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100040, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!1 &1360948192 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100138, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &1360948194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1360948192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4f4196be23a5a8409417739d76afd6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bar: {fileID: 1617707043}
+  onValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Hecomi.HoloLensPlayground.Fader+ValueChangeEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!1 &1372642739 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100066, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!1 &1383044891 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100064, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!1 &1465610870 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100132, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &1465610872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1465610870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4f4196be23a5a8409417739d76afd6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bar: {fileID: 27489292}
+  onValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Hecomi.HoloLensPlayground.Fader+ValueChangeEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!1 &1465901427 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100098, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &1465901429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1465901427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c558fd192c842604581b6a2d16bf1542, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  push: {fileID: 1812396954}
+  onPressed:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  onReleased:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+--- !u!1 &1518819109 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100356, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &1518819111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1518819109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae3f5913c2d909e4cbc92f56ebabd61a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggleInner: {fileID: 1042726554}
+  onValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Hecomi.HoloLensPlayground.Toggle+ValueChangeEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!1001 &1524158170
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400002, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.201
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.934
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 7d316193567ef3f4ebd60b6564072465, type: 2}
+    - target: {fileID: 100374, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100376, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100120, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100378, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_IsPrefabParent: 0
+--- !u!1 &1536866727 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100024, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!4 &1617707043 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400128, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!1 &1619422658 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100070, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!1001 &1639838870
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4000011792100794, guid: a611e772ef8ddf64d8106a9cbb70f31c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011792100794, guid: a611e772ef8ddf64d8106a9cbb70f31c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011792100794, guid: a611e772ef8ddf64d8106a9cbb70f31c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011792100794, guid: a611e772ef8ddf64d8106a9cbb70f31c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011792100794, guid: a611e772ef8ddf64d8106a9cbb70f31c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011792100794, guid: a611e772ef8ddf64d8106a9cbb70f31c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011792100794, guid: a611e772ef8ddf64d8106a9cbb70f31c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011792100794, guid: a611e772ef8ddf64d8106a9cbb70f31c, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: a611e772ef8ddf64d8106a9cbb70f31c, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &1702601489 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100092, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &1702601491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1702601489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c558fd192c842604581b6a2d16bf1542, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  push: {fileID: 213985838}
+  onPressed:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  onReleased:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+--- !u!1 &1731027553 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100050, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!1 &1770366010 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100032, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!1 &1774323229 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100110, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &1774323231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1774323229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c558fd192c842604581b6a2d16bf1542, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  push: {fileID: 648287087}
+  onPressed:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  onReleased:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+--- !u!1 &1782765998 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100104, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &1782766000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1782765998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c558fd192c842604581b6a2d16bf1542, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  push: {fileID: 1322194347}
+  onPressed:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  onReleased:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+--- !u!1 &1795603013 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100114, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &1795603015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1795603013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae3f5913c2d909e4cbc92f56ebabd61a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggleInner: {fileID: 1372642739}
+  onValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Hecomi.HoloLensPlayground.Toggle+ValueChangeEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!1 &1801959878 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100362, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &1801959880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1801959878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae3f5913c2d909e4cbc92f56ebabd61a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggleInner: {fileID: 1025190864}
+  onValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Hecomi.HoloLensPlayground.Toggle+ValueChangeEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!1 &1812396954 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100062, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!1 &1825766183 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100058, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!1 &1842523206 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100118, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &1842523208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1842523206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae3f5913c2d909e4cbc92f56ebabd61a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggleInner: {fileID: 1619422658}
+  onValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Hecomi.HoloLensPlayground.Toggle+ValueChangeEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!1 &1851874811 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100018, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &1851874813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1851874811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae3f5913c2d909e4cbc92f56ebabd61a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggleInner: {fileID: 633836669}
+  onValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Hecomi.HoloLensPlayground.Toggle+ValueChangeEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!1 &1857112800 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100002, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &1857112801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1857112800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d5a0a60fbe897549ad0bfe2039f12b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HostTransform: {fileID: 0}
+  DistanceScale: 2
+  IsKeepUpright: 1
+  IsOrientTowardsUser: 0
+  IsDraggingEnabled: 1
+--- !u!65 &1857112802
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1857112800}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.175, y: 0.01, z: 0.25}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1857112803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1857112800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f56be83e80daab24285e1f6e80e60966, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ui1: {fileID: 1273704916}
+  ui2: {fileID: 879537741}
+  ui3: {fileID: 1147731508}
+  ui4: {fileID: 269502269}
+  menu1: {fileID: 1072740780}
+  menu2: {fileID: 1114094060}
+  menu3: {fileID: 1851874813}
+  menu4: {fileID: 934311632}
+--- !u!1001 &1914880047
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4000011656901714, guid: 3eddd1c29199313478dd3f912bfab2ab, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011656901714, guid: 3eddd1c29199313478dd3f912bfab2ab, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011656901714, guid: 3eddd1c29199313478dd3f912bfab2ab, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011656901714, guid: 3eddd1c29199313478dd3f912bfab2ab, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011656901714, guid: 3eddd1c29199313478dd3f912bfab2ab, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011656901714, guid: 3eddd1c29199313478dd3f912bfab2ab, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011656901714, guid: 3eddd1c29199313478dd3f912bfab2ab, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011656901714, guid: 3eddd1c29199313478dd3f912bfab2ab, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012022330152, guid: 3eddd1c29199313478dd3f912bfab2ab, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 3eddd1c29199313478dd3f912bfab2ab, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &1914880048 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000011070707148, guid: 3eddd1c29199313478dd3f912bfab2ab,
+    type: 2}
+  m_PrefabInternal: {fileID: 1914880047}
+--- !u!114 &1914880049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1914880048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d40781677294a0e4caffa3460012ae41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RecognizerStart: 0
+  UseRailsNavigation: 0
+--- !u!1 &1985325032 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100026, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!1001 &2061445580
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4000013298573622, guid: 2ed75ffdf9031c94e8bce4b3d17b9928, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013298573622, guid: 2ed75ffdf9031c94e8bce4b3d17b9928, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013298573622, guid: 2ed75ffdf9031c94e8bce4b3d17b9928, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013298573622, guid: 2ed75ffdf9031c94e8bce4b3d17b9928, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013298573622, guid: 2ed75ffdf9031c94e8bce4b3d17b9928, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013298573622, guid: 2ed75ffdf9031c94e8bce4b3d17b9928, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013298573622, guid: 2ed75ffdf9031c94e8bce4b3d17b9928, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013298573622, guid: 2ed75ffdf9031c94e8bce4b3d17b9928, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011154029958, guid: 2ed75ffdf9031c94e8bce4b3d17b9928,
+        type: 2}
+      propertyPath: surfaceMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 435476abe315ac1418f57be7d6af78dd, type: 2}
+    - target: {fileID: 114000012149591842, guid: 2ed75ffdf9031c94e8bce4b3d17b9928,
+        type: 2}
+      propertyPath: RoomModel
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011154029958, guid: 2ed75ffdf9031c94e8bce4b3d17b9928,
+        type: 2}
+      propertyPath: castShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012698980792, guid: 2ed75ffdf9031c94e8bce4b3d17b9928,
+        type: 2}
+      propertyPath: TrianglesPerCubicMeter
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012698980792, guid: 2ed75ffdf9031c94e8bce4b3d17b9928,
+        type: 2}
+      propertyPath: TimeBetweenUpdates
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010302963436, guid: 2ed75ffdf9031c94e8bce4b3d17b9928, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 2ed75ffdf9031c94e8bce4b3d17b9928, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &2071052848 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100060, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!1 &2107253523 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100036, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!1 &2115598806 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100116, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &2115598808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2115598806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae3f5913c2d909e4cbc92f56ebabd61a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggleInner: {fileID: 765655517}
+  onValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Hecomi.HoloLensPlayground.Toggle+ValueChangeEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
