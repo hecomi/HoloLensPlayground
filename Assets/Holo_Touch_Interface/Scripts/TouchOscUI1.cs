@@ -18,8 +18,11 @@ public class TouchOscUI1 : MonoBehaviour
     [SerializeField] Toggle toggle3_;
     [SerializeField] Toggle toggle4_;
 
-    public void OnMessage(string ui, float value)
+    public void OnMessage(string[] address, Osc.Message msg)
     {
+        var ui = address[1];
+        var value = (float)msg.data[0];
+
         switch (ui) {
             case "fader1"  : fader1_.value  = value; break;
             case "fader2"  : fader2_.value  = value; break;

@@ -21,6 +21,8 @@ public class TouchInterface : MonoBehaviour
 
     TouchOscUI1 uiView1_;
     TouchOscUI2 uiView2_;
+    TouchOscUI3 uiView3_;
+    TouchOscUI4 uiView4_;
 
     void Start()
     {
@@ -29,6 +31,12 @@ public class TouchInterface : MonoBehaviour
 
         uiView2_ = ui2.GetComponent<TouchOscUI2>();
         Assert.IsNotNull(uiView2_, "TouchOscUI2 was not found.");
+
+        uiView3_ = ui3.GetComponent<TouchOscUI3>();
+        Assert.IsNotNull(uiView3_, "TouchOscUI3 was not found.");
+
+        uiView4_ = ui4.GetComponent<TouchOscUI4>();
+        Assert.IsNotNull(uiView4_, "TouchOscUI4 was not found.");
 
         menu1.value = 0f;
         menu2.value = 0f;
@@ -59,13 +67,10 @@ public class TouchInterface : MonoBehaviour
 
         if (address.Length == 1) return;
 
-        Assert.IsTrue(msg.data.Length > 0);
-
-        var ui = address[1];
-        var value = (float)msg.data[0];
-
-        if      (menu == "1") uiView1_.OnMessage(ui, value);
-        else if (menu == "2") uiView2_.OnMessage(ui, value);
+        if      (menu == "1") uiView1_.OnMessage(address, msg);
+        else if (menu == "2") uiView2_.OnMessage(address, msg);
+        else if (menu == "3") uiView3_.OnMessage(address, msg);
+        else if (menu == "4") uiView4_.OnMessage(address, msg);
     }
 }
 

@@ -146,9 +146,38 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: Hecomi.HoloLensPlayground.Toggle+ValueChangeEvent, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!1 &100289094 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100380, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &100289096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 100289094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b8d048ecb59cc845b2852600dd19be7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  barX: {fileID: 261737569}
+  barY: {fileID: 164013643}
+  cursor: {fileID: 731231656}
+  xRange: 0.12
+  yRange: 0.12
+  onValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Hecomi.HoloLensPlayground.XY+ValueChangeEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &131401714 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100314, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!4 &164013643 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400156, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
   m_PrefabInternal: {fileID: 1524158170}
 --- !u!1 &202161148 stripped
 GameObject:
@@ -175,14 +204,38 @@ MonoBehaviour:
 GameObject:
   m_PrefabParentObject: {fileID: 100056, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
   m_PrefabInternal: {fileID: 1524158170}
+--- !u!1 &223791405 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100302, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
 --- !u!4 &237035707 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400130, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!4 &261737569 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400154, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
   m_PrefabInternal: {fileID: 1524158170}
 --- !u!1 &269502269 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100378, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
   m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &269502270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 269502269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38a3e8eb3a49a7746b69696a04ad6803, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle1: {fileID: 1524158183}
+  toggle2: {fileID: 1524158182}
+  toggle3: {fileID: 1524158181}
+  toggle4: {fileID: 1524158180}
+  multitoggle: {fileID: 1524158184}
 --- !u!1 &285079788 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100082, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
@@ -442,6 +495,14 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 400124, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
   m_PrefabInternal: {fileID: 1524158170}
+--- !u!4 &731231656 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400158, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!1 &756238338 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100322, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
 --- !u!1 &761239736 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100034, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
@@ -658,6 +719,10 @@ GameObject:
 GameObject:
   m_PrefabParentObject: {fileID: 100316, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
   m_PrefabInternal: {fileID: 1524158170}
+--- !u!1 &1057811719 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100304, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
 --- !u!1 &1072740778 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100014, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
@@ -851,6 +916,22 @@ MonoBehaviour:
 GameObject:
   m_PrefabParentObject: {fileID: 100120, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
   m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &1147731510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1147731508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f99b5f0a6d3d60549a9b578322b40289, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle1: {fileID: 1245845358}
+  toggle2: {fileID: 1199033768}
+  toggle3: {fileID: 1433037143}
+  toggle4: {fileID: 2117590092}
+  xy: {fileID: 100289096}
 --- !u!1 &1196194976 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100108, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
@@ -877,6 +958,48 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!1 &1199033766 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100358, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &1199033768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1199033766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae3f5913c2d909e4cbc92f56ebabd61a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggleInner: {fileID: 2085842080}
+  onValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Hecomi.HoloLensPlayground.Toggle+ValueChangeEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!1 &1245845356 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100352, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &1245845358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1245845356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae3f5913c2d909e4cbc92f56ebabd61a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggleInner: {fileID: 756238338}
+  onValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Hecomi.HoloLensPlayground.Toggle+ValueChangeEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!1 &1263408540 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100102, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
@@ -964,6 +1087,27 @@ GameObject:
 GameObject:
   m_PrefabParentObject: {fileID: 100064, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
   m_PrefabInternal: {fileID: 1524158170}
+--- !u!1 &1433037141 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100364, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &1433037143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1433037141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae3f5913c2d909e4cbc92f56ebabd61a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggleInner: {fileID: 223791405}
+  onValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Hecomi.HoloLensPlayground.Toggle+ValueChangeEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!1 &1465610870 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100132, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
@@ -1098,6 +1242,126 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &1524158171 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100312, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!1 &1524158172 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100372, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!1 &1524158173 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100310, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!1 &1524158174 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100366, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!1 &1524158175 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100308, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!1 &1524158176 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100360, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!1 &1524158177 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100306, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!1 &1524158178 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100354, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!1 &1524158179 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100142, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &1524158180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1524158172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae3f5913c2d909e4cbc92f56ebabd61a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggleInner: {fileID: 1524158171}
+  onValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Hecomi.HoloLensPlayground.Toggle+ValueChangeEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &1524158181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1524158174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae3f5913c2d909e4cbc92f56ebabd61a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggleInner: {fileID: 1524158173}
+  onValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Hecomi.HoloLensPlayground.Toggle+ValueChangeEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &1524158182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1524158176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae3f5913c2d909e4cbc92f56ebabd61a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggleInner: {fileID: 1524158175}
+  onValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Hecomi.HoloLensPlayground.Toggle+ValueChangeEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &1524158183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1524158178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae3f5913c2d909e4cbc92f56ebabd61a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggleInner: {fileID: 1524158177}
+  onValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Hecomi.HoloLensPlayground.Toggle+ValueChangeEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &1524158184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1524158179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04e3c7fd03c909047a5366169016a87a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Hecomi.HoloLensPlayground.MultiToggle+ValueChangeEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!1 &1536866727 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100024, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
@@ -1524,6 +1788,10 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 100060, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
   m_PrefabInternal: {fileID: 1524158170}
+--- !u!1 &2085842080 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100324, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
 --- !u!1 &2107253523 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100036, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
@@ -1544,6 +1812,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toggleInner: {fileID: 765655517}
+  onValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Hecomi.HoloLensPlayground.Toggle+ValueChangeEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!1 &2117590090 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100370, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &2117590092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2117590090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae3f5913c2d909e4cbc92f56ebabd61a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggleInner: {fileID: 1057811719}
   onValueChanged:
     m_PersistentCalls:
       m_Calls: []
