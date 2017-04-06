@@ -808,8 +808,8 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.5
-  far clip plane: 1000
+  near clip plane: 0.1
+  far clip plane: 30
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -1041,15 +1041,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05670187d5a50ed4cb9a6a1c4374925a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fader1_: {fileID: 1465610872}
-  fader2_: {fileID: 522793203}
-  fader3_: {fileID: 827361698}
-  fader4_: {fileID: 1360948194}
-  fader5_: {fileID: 606256173}
-  toggle1_: {fileID: 84276642}
-  toggle2_: {fileID: 1795603015}
-  toggle3_: {fileID: 2115598808}
-  toggle4_: {fileID: 1842523208}
+  fader1: {fileID: 1465610872}
+  fader2: {fileID: 522793203}
+  fader3: {fileID: 827361698}
+  fader4: {fileID: 1360948194}
+  fader5: {fileID: 606256173}
+  toggle1: {fileID: 84276642}
+  toggle2: {fileID: 1795603015}
+  toggle3: {fileID: 2115598808}
+  toggle4: {fileID: 1842523208}
 --- !u!1 &1289704986 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100048, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
@@ -1221,7 +1221,7 @@ Prefab:
       objectReference: {fileID: 9100000, guid: 7d316193567ef3f4ebd60b6564072465, type: 2}
     - target: {fileID: 100374, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100376, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
       propertyPath: m_IsActive
