@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
+using UnityEngine.Assertions;
 
 #if UNITY_EDITOR
 using System.Net;
 using System.Net.Sockets;
 #else
 using System;
+using System.IO;
 using Windows.Networking.Sockets;
 #endif
 
@@ -28,6 +30,7 @@ public class TouchOscServer : MonoBehaviour
 
     void Start()
     {
+        Assert.IsNotNull(handler, "should set handler.");
         endPoint_ = new IPEndPoint(IPAddress.Any, listenPort);
         udpClient_ = new UdpClient(endPoint_);
     }
@@ -48,8 +51,8 @@ public class TouchOscServer : MonoBehaviour
     DatagramSocket socket_;
     object lockObject_ = new object();
 
-    const int bufferSize = 1024;
-    byte[] buffer = new byte[bufferSize];
+    const int MAX_BUFFER_SIZE = 1024;
+    byte[] buffer = new byte[MAX_BUFFER_SIZE];
 
     async void Start()
     {
@@ -76,7 +79,7 @@ public class TouchOscServer : MonoBehaviour
     async void OnMessage(DatagramSocket sender, DatagramSocketMessageReceivedEventArgs args)
     {
         using (var stream = args.GetDataStream().AsStreamForRead()) {
-            await stream.ReadAsync(buffer, 0, bufferSize);
+            await stream.ReadAsync(buffer, 0, MAX_BUFFER_SIZE);
             lock (lockObject_) {
                 osc_.FeedData(buffer);
             }
