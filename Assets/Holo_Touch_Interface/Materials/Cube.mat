@@ -6,9 +6,9 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: StingrayPBS4
-  m_Shader: {fileID: 4800000, guid: 55059d1e5ad171643930dc0bbda1ca37, type: 3}
-  m_ShaderKeywords: _EMISSION _METHOD_PROPERTY
+  m_Name: Cube
+  m_Shader: {fileID: 4800000, guid: 63097f9a2c75e28499a6d89986efc685, type: 3}
+  m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 1
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -90,18 +90,12 @@ Material:
       second: 1
     - first:
         name: _Glossiness
-      second: 0.5
+      second: 0
     - first:
         name: _GlossyReflections
       second: 1
     - first:
-        name: _InvFade
-      second: 1
-    - first:
         name: _Metallic
-      second: 0
-    - first:
-        name: _Method
       second: 0
     - first:
         name: _Mode
@@ -113,12 +107,6 @@ Material:
         name: _Parallax
       second: 0.02
     - first:
-        name: _SmoothStepEnd
-      second: 1
-    - first:
-        name: _SmoothStepStart
-      second: 0
-    - first:
         name: _SmoothnessTextureChannel
       second: 0
     - first:
@@ -129,7 +117,7 @@ Material:
       second: 1
     - first:
         name: _StartDistance
-      second: 0.6
+      second: 0.48
     - first:
         name: _UVSec
       second: 0
@@ -139,10 +127,7 @@ Material:
     m_Colors:
     - first:
         name: _Color
-      second: {r: 1, g: 1, b: 1, a: 1}
+      second: {r: 0, g: 1, b: 0.08965516, a: 1}
     - first:
         name: _EmissionColor
       second: {r: 0, g: 0, b: 0, a: 1}
-    - first:
-        name: _TintColor
-      second: {r: 0.86206913, g: 1, b: 0, a: 0.39215687}

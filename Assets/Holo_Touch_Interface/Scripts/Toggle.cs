@@ -11,10 +11,9 @@ public class Toggle : MonoBehaviour
     GameObject toggleInner;
 
     [System.Serializable]
-    class ValueChangeEvent : UnityEvent<bool> {}
+    public class ValueChangeEvent : UnityEvent<bool> {}
 
-    [SerializeField]
-    ValueChangeEvent onValueChanged = new ValueChangeEvent();
+    public ValueChangeEvent onValueChanged = new ValueChangeEvent();
 
     private float value_;
     public float value
@@ -22,10 +21,13 @@ public class Toggle : MonoBehaviour
         get { return value_; }
         set
         {
+            bool isChanged = (value_ != value);
             value_ = value;
             bool isTrue = value_ > 0;
             toggleInner.SetActive(isTrue);
-            onValueChanged.Invoke(isTrue);
+            if (isChanged) {
+                onValueChanged.Invoke(isTrue);
+            }
         }
     }
 

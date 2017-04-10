@@ -11,10 +11,9 @@ public class Fader : MonoBehaviour
     Transform bar;
 
     [System.Serializable]
-    class ValueChangeEvent : UnityEvent<float> {}
+    public class ValueChangeEvent : UnityEvent<float> {}
 
-    [SerializeField]
-    ValueChangeEvent onValueChanged = new ValueChangeEvent();
+    public ValueChangeEvent onValueChanged = new ValueChangeEvent();
 
     private float value_ = 0f;
     public float value

@@ -10,11 +10,8 @@ public class Push : MonoBehaviour
     [SerializeField]
     GameObject push;
 
-    [SerializeField]
-    UnityEvent onPressed = new UnityEvent();
-
-    [SerializeField]
-    UnityEvent onReleased = new UnityEvent();
+    public UnityEvent onPressed = new UnityEvent();
+    public UnityEvent onReleased = new UnityEvent();
 
     private float value_;
     public float value

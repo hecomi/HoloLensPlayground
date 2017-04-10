@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: StingrayPBS4
+  m_Name: Screen
   m_Shader: {fileID: 4800000, guid: 55059d1e5ad171643930dc0bbda1ca37, type: 3}
   m_ShaderKeywords: _EMISSION _METHOD_PROPERTY
   m_LightmapFlags: 1
@@ -113,12 +113,6 @@ Material:
         name: _Parallax
       second: 0.02
     - first:
-        name: _SmoothStepEnd
-      second: 1
-    - first:
-        name: _SmoothStepStart
-      second: 0
-    - first:
         name: _SmoothnessTextureChannel
       second: 0
     - first:
@@ -145,4 +139,4 @@ Material:
       second: {r: 0, g: 0, b: 0, a: 1}
     - first:
         name: _TintColor
-      second: {r: 0.86206913, g: 1, b: 0, a: 0.39215687}
+      second: {r: 0, g: 1, b: 0.25517225, a: 0.5}

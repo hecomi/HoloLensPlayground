@@ -7,7 +7,6 @@ Properties
 	_Method("DestructionMethod", Float) = 0
 	_TintColor("Tint Color", Color) = (0.5, 0.5, 0.5, 0.5)
 	_MainTex("Particle Texture", 2D) = "white" {}
-	_InvFade("Soft Particles Factor", Range(0.01, 3.0)) = 1.0
     _StartDistance("Start Distance", Float) = 0.6
     _EndDistance("End Distance", Float) = 0.3
 }
@@ -21,9 +20,10 @@ CGINCLUDE
 sampler2D _MainTex;
 fixed4 _MainTex_ST;
 fixed4 _TintColor;
-fixed _InvFade;
 float _StartDistance;
 float _EndDistance;
+float _SmoothStepStart;
+float _SmoothStepEnd;
 
 struct appdata_t 
 {
@@ -53,7 +53,8 @@ v2f vert(appdata_t v)
     fixed proximity = clamp(1.0 - (_StartDistance - dist) / (_StartDistance - _EndDistance), 0.0, 1.0);
 
     fixed3 viewNormal = mul(UNITY_MATRIX_MV, v.normal);
-    fixed intensity = smoothstep(-0.1, 0.9, length(viewNormal.xy));
+    fixed intensity = abs(viewNormal.z);
+    intensity = smoothstep(0.1, 1.0, intensity);
 
     o.vertex = UnityObjectToClipPos(v.vertex);
     o.color = v.color;

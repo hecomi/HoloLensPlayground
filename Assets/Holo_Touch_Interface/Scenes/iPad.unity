@@ -121,6 +121,37 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!114 &32049834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 32049831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279af1646df27cc41ab266009c781cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cubeBase: {fileID: 0}
+  cubePrefab: {fileID: 1334272868062042, guid: c65d7084b53f69642ae072a1d9ac780c, type: 2}
+  scaleSpeed: 0.1
+  force: 200
+  torque: 200
+--- !u!114 &32049835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 32049831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd31a63b50c602040a80e01c01b95705, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amp: 0.01
+  freq: 3
+  dampingTime: 0.5
+  target: {fileID: 0}
 --- !u!1 &48102371 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100038, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
@@ -143,9 +174,49 @@ MonoBehaviour:
   toggleInner: {fileID: 1383044891}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 84276644}
+        m_MethodName: OnClick
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: Hecomi.HoloLensPlayground.Toggle+ValueChangeEvent, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &84276643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 84276640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33bbb03bf082eff429257fda86d9739c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amp: 0.01
+  freq: 3
+  dampingTime: 0.3
+  target: {fileID: 0}
+--- !u!114 &84276644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 84276640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef53c106f5ae0ff4d9431d269fb22d38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectPrefab: {fileID: 1452419728463548, guid: 5af983825448a3640a92f660330a28a3,
+    type: 2}
+  effectMesh: {fileID: 1383044894}
 --- !u!1 &100289094 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100380, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
@@ -200,6 +271,21 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: Hecomi.HoloLensPlayground.Toggle+ValueChangeEvent, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &202161151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 202161148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33bbb03bf082eff429257fda86d9739c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amp: 0.01
+  freq: 3
+  dampingTime: 0.5
+  target: {fileID: 0}
 --- !u!1 &213985838 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100056, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
@@ -262,10 +348,103 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!114 &285079791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 285079788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279af1646df27cc41ab266009c781cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cubeBase: {fileID: 0}
+  cubePrefab: {fileID: 1334272868062042, guid: c65d7084b53f69642ae072a1d9ac780c, type: 2}
+  scaleSpeed: 0.1
+  force: 200
+  torque: 200
+--- !u!114 &285079792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 285079788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd31a63b50c602040a80e01c01b95705, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amp: 0.01
+  freq: 3
+  dampingTime: 0.5
+  target: {fileID: 0}
 --- !u!4 &322150734 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400126, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
   m_PrefabInternal: {fileID: 1524158170}
+--- !u!1001 &372350852
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4025721979880534, guid: 5af983825448a3640a92f660330a28a3, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4025721979880534, guid: 5af983825448a3640a92f660330a28a3, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4025721979880534, guid: 5af983825448a3640a92f660330a28a3, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.0416
+      objectReference: {fileID: 0}
+    - target: {fileID: 4025721979880534, guid: 5af983825448a3640a92f660330a28a3, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4025721979880534, guid: 5af983825448a3640a92f660330a28a3, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4025721979880534, guid: 5af983825448a3640a92f660330a28a3, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4025721979880534, guid: 5af983825448a3640a92f660330a28a3, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4025721979880534, guid: 5af983825448a3640a92f660330a28a3, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 198201582376813606, guid: 5af983825448a3640a92f660330a28a3,
+        type: 2}
+      propertyPath: prewarm
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198201582376813606, guid: 5af983825448a3640a92f660330a28a3,
+        type: 2}
+      propertyPath: randomSeed
+      value: -932121792
+      objectReference: {fileID: 0}
+    - target: {fileID: 198201582376813606, guid: 5af983825448a3640a92f660330a28a3,
+        type: 2}
+      propertyPath: lengthInSec
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 198201582376813606, guid: 5af983825448a3640a92f660330a28a3,
+        type: 2}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 5af983825448a3640a92f660330a28a3, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &444775341 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100052, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
@@ -300,6 +479,37 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!114 &521626174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 521626171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279af1646df27cc41ab266009c781cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cubeBase: {fileID: 0}
+  cubePrefab: {fileID: 1334272868062042, guid: c65d7084b53f69642ae072a1d9ac780c, type: 2}
+  scaleSpeed: 0.1
+  force: 200
+  torque: 200
+--- !u!114 &521626175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 521626171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd31a63b50c602040a80e01c01b95705, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amp: 0.01
+  freq: 3
+  dampingTime: 0.5
+  target: {fileID: 0}
 --- !u!1 &522793201 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100134, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
@@ -321,6 +531,21 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: Hecomi.HoloLensPlayground.Fader+ValueChangeEvent, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &522793204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 522793201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a18d358d08d178f46a3f2dba7502f381, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: 1
+  bar: {fileID: 713142665}
+  cubePrefab: {fileID: 1467387150820626, guid: 503f9b0ab89c0914ebe16b768f6bc46e, type: 2}
+  maxHeight: 0.1
 --- !u!1 &560842910 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100084, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
@@ -347,6 +572,37 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!114 &560842913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 560842910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279af1646df27cc41ab266009c781cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cubeBase: {fileID: 0}
+  cubePrefab: {fileID: 1334272868062042, guid: c65d7084b53f69642ae072a1d9ac780c, type: 2}
+  scaleSpeed: 0.1
+  force: 200
+  torque: 200
+--- !u!114 &560842914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 560842910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd31a63b50c602040a80e01c01b95705, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amp: 0.01
+  freq: 3
+  dampingTime: 0.5
+  target: {fileID: 0}
 --- !u!1 &576315591 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100088, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
@@ -373,6 +629,37 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!114 &576315594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 576315591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279af1646df27cc41ab266009c781cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cubeBase: {fileID: 0}
+  cubePrefab: {fileID: 1334272868062042, guid: c65d7084b53f69642ae072a1d9ac780c, type: 2}
+  scaleSpeed: 0.1
+  force: 200
+  torque: 200
+--- !u!114 &576315595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 576315591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd31a63b50c602040a80e01c01b95705, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amp: 0.01
+  freq: 3
+  dampingTime: 0.5
+  target: {fileID: 0}
 --- !u!1 &595870523 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100094, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
@@ -399,6 +686,37 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!114 &595870526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 595870523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279af1646df27cc41ab266009c781cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cubeBase: {fileID: 0}
+  cubePrefab: {fileID: 1334272868062042, guid: c65d7084b53f69642ae072a1d9ac780c, type: 2}
+  scaleSpeed: 0.1
+  force: 200
+  torque: 200
+--- !u!114 &595870527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 595870523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd31a63b50c602040a80e01c01b95705, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amp: 0.01
+  freq: 3
+  dampingTime: 0.5
+  target: {fileID: 0}
 --- !u!1 &606256171 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100140, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
@@ -420,9 +738,29 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: Hecomi.HoloLensPlayground.Fader+ValueChangeEvent, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &606256174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 606256171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a18d358d08d178f46a3f2dba7502f381, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: 0
+  bar: {fileID: 237035707}
+  cubePrefab: {fileID: 1467387150820626, guid: 503f9b0ab89c0914ebe16b768f6bc46e, type: 2}
+  maxHeight: 0.1
 --- !u!1 &633836669 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100028, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!33 &633836672 stripped
+MeshFilter:
+  m_PrefabParentObject: {fileID: 3300012, guid: 873c9a5d31a8422428380d227e987cac,
+    type: 3}
   m_PrefabInternal: {fileID: 1524158170}
 --- !u!1 &648287087 stripped
 GameObject:
@@ -511,6 +849,11 @@ GameObject:
 GameObject:
   m_PrefabParentObject: {fileID: 100068, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
   m_PrefabInternal: {fileID: 1524158170}
+--- !u!33 &765655520 stripped
+MeshFilter:
+  m_PrefabParentObject: {fileID: 3300052, guid: 873c9a5d31a8422428380d227e987cac,
+    type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
 --- !u!1 &827361696 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100136, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
@@ -532,6 +875,21 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: Hecomi.HoloLensPlayground.Fader+ValueChangeEvent, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &827361699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 827361696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a18d358d08d178f46a3f2dba7502f381, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: 1
+  bar: {fileID: 322150734}
+  cubePrefab: {fileID: 1467387150820626, guid: 503f9b0ab89c0914ebe16b768f6bc46e, type: 2}
+  maxHeight: 0.1
 --- !u!1 &839140299 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100096, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
@@ -550,14 +908,67 @@ MonoBehaviour:
   push: {fileID: 2071052848}
   onPressed:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 839140302}
+        m_MethodName: OnPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   onReleased:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 839140302}
+        m_MethodName: OnReleased
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!114 &839140302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 839140299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279af1646df27cc41ab266009c781cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cubeBase: {fileID: 0}
+  cubePrefab: {fileID: 1334272868062042, guid: c65d7084b53f69642ae072a1d9ac780c, type: 2}
+  scaleSpeed: 0.1
+  force: 200
+  torque: 200
+--- !u!114 &839140303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 839140299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd31a63b50c602040a80e01c01b95705, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amp: 0.01
+  freq: 3
+  dampingTime: 0.5
+  target: {fileID: 0}
 --- !u!1 &879537741 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100376, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
@@ -614,6 +1025,21 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: Hecomi.HoloLensPlayground.Toggle+ValueChangeEvent, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &899425591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 899425588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33bbb03bf082eff429257fda86d9739c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amp: 0.01
+  freq: 3
+  dampingTime: 0.5
+  target: {fileID: 0}
 --- !u!1 &933128763
 GameObject:
   m_ObjectHideFlags: 0
@@ -660,6 +1086,20 @@ Transform:
 GameObject:
   m_PrefabParentObject: {fileID: 100020, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
   m_PrefabInternal: {fileID: 1524158170}
+--- !u!114 &934311631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 934311630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef53c106f5ae0ff4d9431d269fb22d38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectPrefab: {fileID: 1452419728463548, guid: 5af983825448a3640a92f660330a28a3,
+    type: 2}
+  effectMesh: {fileID: 997485334}
 --- !u!114 &934311632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -674,9 +1114,35 @@ MonoBehaviour:
   toggleInner: {fileID: 997485332}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 934311631}
+        m_MethodName: OnClick
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: Hecomi.HoloLensPlayground.Toggle+ValueChangeEvent, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &934311634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 934311630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33bbb03bf082eff429257fda86d9739c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amp: 0.01
+  freq: 3
+  dampingTime: 0.2
+  target: {fileID: 0}
 --- !u!1 &948554181 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100044, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
@@ -707,9 +1173,45 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!114 &956183699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 956183696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279af1646df27cc41ab266009c781cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cubeBase: {fileID: 0}
+  cubePrefab: {fileID: 1334272868062042, guid: c65d7084b53f69642ae072a1d9ac780c, type: 2}
+  scaleSpeed: 0.1
+  force: 200
+  torque: 200
+--- !u!114 &956183700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 956183696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd31a63b50c602040a80e01c01b95705, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amp: 0.01
+  freq: 3
+  dampingTime: 0.5
+  target: {fileID: 0}
 --- !u!1 &997485332 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100030, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!33 &997485334 stripped
+MeshFilter:
+  m_PrefabParentObject: {fileID: 3300014, guid: 873c9a5d31a8422428380d227e987cac,
+    type: 3}
   m_PrefabInternal: {fileID: 1524158170}
 --- !u!1 &1025190864 stripped
 GameObject:
@@ -741,9 +1243,49 @@ MonoBehaviour:
   toggleInner: {fileID: 1536866727}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1072740781}
+        m_MethodName: OnClick
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: Hecomi.HoloLensPlayground.Toggle+ValueChangeEvent, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &1072740781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1072740778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef53c106f5ae0ff4d9431d269fb22d38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectPrefab: {fileID: 1452419728463548, guid: 5af983825448a3640a92f660330a28a3,
+    type: 2}
+  effectMesh: {fileID: 1536866730}
+--- !u!114 &1072740782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1072740778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33bbb03bf082eff429257fda86d9739c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amp: 0.01
+  freq: 3
+  dampingTime: 0.2
+  target: {fileID: 0}
 --- !u!1 &1095954186 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100320, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
@@ -865,6 +1407,37 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!114 &1106875395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1106875392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279af1646df27cc41ab266009c781cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cubeBase: {fileID: 0}
+  cubePrefab: {fileID: 1334272868062042, guid: c65d7084b53f69642ae072a1d9ac780c, type: 2}
+  scaleSpeed: 0.1
+  force: 200
+  torque: 200
+--- !u!114 &1106875396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1106875392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd31a63b50c602040a80e01c01b95705, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amp: 0.01
+  freq: 3
+  dampingTime: 0.5
+  target: {fileID: 0}
 --- !u!1 &1114094058 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100016, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
@@ -883,9 +1456,49 @@ MonoBehaviour:
   toggleInner: {fileID: 1985325032}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1114094061}
+        m_MethodName: OnClick
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: Hecomi.HoloLensPlayground.Toggle+ValueChangeEvent, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &1114094061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1114094058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef53c106f5ae0ff4d9431d269fb22d38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectPrefab: {fileID: 1452419728463548, guid: 5af983825448a3640a92f660330a28a3,
+    type: 2}
+  effectMesh: {fileID: 1985325035}
+--- !u!114 &1114094062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1114094058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33bbb03bf082eff429257fda86d9739c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amp: 0.01
+  freq: 3
+  dampingTime: 0.2
+  target: {fileID: 0}
 --- !u!1 &1125110277 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100086, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
@@ -912,6 +1525,37 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!114 &1125110280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1125110277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279af1646df27cc41ab266009c781cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cubeBase: {fileID: 0}
+  cubePrefab: {fileID: 1334272868062042, guid: c65d7084b53f69642ae072a1d9ac780c, type: 2}
+  scaleSpeed: 0.1
+  force: 200
+  torque: 200
+--- !u!114 &1125110281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1125110277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd31a63b50c602040a80e01c01b95705, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amp: 0.01
+  freq: 3
+  dampingTime: 0.5
+  target: {fileID: 0}
 --- !u!1 &1147731508 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100120, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
@@ -958,6 +1602,37 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!114 &1196194979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1196194976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279af1646df27cc41ab266009c781cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cubeBase: {fileID: 0}
+  cubePrefab: {fileID: 1334272868062042, guid: c65d7084b53f69642ae072a1d9ac780c, type: 2}
+  scaleSpeed: 0.1
+  force: 200
+  torque: 200
+--- !u!114 &1196194980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1196194976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd31a63b50c602040a80e01c01b95705, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amp: 0.01
+  freq: 3
+  dampingTime: 0.5
+  target: {fileID: 0}
 --- !u!1 &1199033766 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100358, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
@@ -1026,6 +1701,37 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!114 &1263408543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1263408540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279af1646df27cc41ab266009c781cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cubeBase: {fileID: 0}
+  cubePrefab: {fileID: 1334272868062042, guid: c65d7084b53f69642ae072a1d9ac780c, type: 2}
+  scaleSpeed: 0.1
+  force: 200
+  torque: 200
+--- !u!114 &1263408544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1263408540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd31a63b50c602040a80e01c01b95705, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amp: 0.01
+  freq: 3
+  dampingTime: 0.5
+  target: {fileID: 0}
 --- !u!1 &1273704916 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100374, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
@@ -1079,13 +1785,38 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: Hecomi.HoloLensPlayground.Fader+ValueChangeEvent, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &1360948195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1360948192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a18d358d08d178f46a3f2dba7502f381, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: 1
+  bar: {fileID: 1617707043}
+  cubePrefab: {fileID: 1467387150820626, guid: 503f9b0ab89c0914ebe16b768f6bc46e, type: 2}
+  maxHeight: 0.1
 --- !u!1 &1372642739 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100066, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
   m_PrefabInternal: {fileID: 1524158170}
+--- !u!33 &1372642742 stripped
+MeshFilter:
+  m_PrefabParentObject: {fileID: 3300050, guid: 873c9a5d31a8422428380d227e987cac,
+    type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
 --- !u!1 &1383044891 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100064, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!33 &1383044894 stripped
+MeshFilter:
+  m_PrefabParentObject: {fileID: 3300048, guid: 873c9a5d31a8422428380d227e987cac,
+    type: 3}
   m_PrefabInternal: {fileID: 1524158170}
 --- !u!1 &1433037141 stripped
 GameObject:
@@ -1129,6 +1860,21 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: Hecomi.HoloLensPlayground.Fader+ValueChangeEvent, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &1465610873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1465610870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a18d358d08d178f46a3f2dba7502f381, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: 1
+  bar: {fileID: 27489292}
+  cubePrefab: {fileID: 1467387150820626, guid: 503f9b0ab89c0914ebe16b768f6bc46e, type: 2}
+  maxHeight: 0.1
 --- !u!1 &1465901427 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100098, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
@@ -1155,6 +1901,37 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!114 &1465901430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1465901427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279af1646df27cc41ab266009c781cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cubeBase: {fileID: 0}
+  cubePrefab: {fileID: 1334272868062042, guid: c65d7084b53f69642ae072a1d9ac780c, type: 2}
+  scaleSpeed: 0.1
+  force: 200
+  torque: 200
+--- !u!114 &1465901431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1465901427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd31a63b50c602040a80e01c01b95705, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amp: 0.01
+  freq: 3
+  dampingTime: 0.5
+  target: {fileID: 0}
 --- !u!1 &1518819109 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100356, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
@@ -1176,6 +1953,21 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: Hecomi.HoloLensPlayground.Toggle+ValueChangeEvent, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &1518819112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1518819109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33bbb03bf082eff429257fda86d9739c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amp: 0.01
+  freq: 3
+  dampingTime: 0.5
+  target: {fileID: 0}
 --- !u!1001 &1524158170
 Prefab:
   m_ObjectHideFlags: 0
@@ -1189,11 +1981,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.201
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.934
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1238,6 +2030,26 @@ Prefab:
     - target: {fileID: 9500000, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300004, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5b3cae616cb01c94da67ac0d964f532c, type: 2}
+    - target: {fileID: 100008, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.98
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
@@ -1366,6 +2178,11 @@ MonoBehaviour:
 GameObject:
   m_PrefabParentObject: {fileID: 100024, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
   m_PrefabInternal: {fileID: 1524158170}
+--- !u!33 &1536866730 stripped
+MeshFilter:
+  m_PrefabParentObject: {fileID: 3300008, guid: 873c9a5d31a8422428380d227e987cac,
+    type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
 --- !u!4 &1617707043 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400128, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
@@ -1373,6 +2190,11 @@ Transform:
 --- !u!1 &1619422658 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100070, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
+--- !u!33 &1619422661 stripped
+MeshFilter:
+  m_PrefabParentObject: {fileID: 3300054, guid: 873c9a5d31a8422428380d227e987cac,
+    type: 3}
   m_PrefabInternal: {fileID: 1524158170}
 --- !u!1001 &1639838870
 Prefab:
@@ -1416,6 +2238,68 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a611e772ef8ddf64d8106a9cbb70f31c, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1690965164
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1690965167}
+  - component: {fileID: 1690965166}
+  - component: {fileID: 1690965165}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1690965165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1690965164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1690965166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1690965164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 5
+--- !u!4 &1690965167
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1690965164}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1702601489 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100092, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
@@ -1442,6 +2326,37 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!114 &1702601492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1702601489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279af1646df27cc41ab266009c781cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cubeBase: {fileID: 0}
+  cubePrefab: {fileID: 1334272868062042, guid: c65d7084b53f69642ae072a1d9ac780c, type: 2}
+  scaleSpeed: 0.1
+  force: 200
+  torque: 200
+--- !u!114 &1702601493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1702601489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd31a63b50c602040a80e01c01b95705, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amp: 0.01
+  freq: 3
+  dampingTime: 0.5
+  target: {fileID: 0}
 --- !u!1 &1731027553 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100050, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
@@ -1476,6 +2391,37 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!114 &1774323232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1774323229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279af1646df27cc41ab266009c781cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cubeBase: {fileID: 0}
+  cubePrefab: {fileID: 1334272868062042, guid: c65d7084b53f69642ae072a1d9ac780c, type: 2}
+  scaleSpeed: 0.1
+  force: 200
+  torque: 200
+--- !u!114 &1774323233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1774323229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd31a63b50c602040a80e01c01b95705, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amp: 0.01
+  freq: 3
+  dampingTime: 0.5
+  target: {fileID: 0}
 --- !u!1 &1782765998 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100104, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
@@ -1502,6 +2448,37 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!114 &1782766001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1782765998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279af1646df27cc41ab266009c781cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cubeBase: {fileID: 0}
+  cubePrefab: {fileID: 1334272868062042, guid: c65d7084b53f69642ae072a1d9ac780c, type: 2}
+  scaleSpeed: 0.1
+  force: 200
+  torque: 200
+--- !u!114 &1782766002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1782765998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd31a63b50c602040a80e01c01b95705, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amp: 0.01
+  freq: 3
+  dampingTime: 0.5
+  target: {fileID: 0}
 --- !u!1 &1795603013 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100114, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
@@ -1520,9 +2497,49 @@ MonoBehaviour:
   toggleInner: {fileID: 1372642739}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1795603017}
+        m_MethodName: OnClick
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: Hecomi.HoloLensPlayground.Toggle+ValueChangeEvent, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &1795603016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1795603013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33bbb03bf082eff429257fda86d9739c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amp: 0.01
+  freq: 3
+  dampingTime: 0.3
+  target: {fileID: 0}
+--- !u!114 &1795603017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1795603013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef53c106f5ae0ff4d9431d269fb22d38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectPrefab: {fileID: 1452419728463548, guid: 5af983825448a3640a92f660330a28a3,
+    type: 2}
+  effectMesh: {fileID: 1372642742}
 --- !u!1 &1801959878 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100362, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
@@ -1544,6 +2561,21 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: Hecomi.HoloLensPlayground.Toggle+ValueChangeEvent, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &1801959881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1801959878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33bbb03bf082eff429257fda86d9739c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amp: 0.01
+  freq: 3
+  dampingTime: 0.5
+  target: {fileID: 0}
 --- !u!1 &1812396954 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100062, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
@@ -1570,9 +2602,49 @@ MonoBehaviour:
   toggleInner: {fileID: 1619422658}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1842523210}
+        m_MethodName: OnClick
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: Hecomi.HoloLensPlayground.Toggle+ValueChangeEvent, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &1842523209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1842523206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33bbb03bf082eff429257fda86d9739c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amp: 0.01
+  freq: 3
+  dampingTime: 0.3
+  target: {fileID: 0}
+--- !u!114 &1842523210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1842523206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef53c106f5ae0ff4d9431d269fb22d38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectPrefab: {fileID: 1452419728463548, guid: 5af983825448a3640a92f660330a28a3,
+    type: 2}
+  effectMesh: {fileID: 1619422661}
 --- !u!1 &1851874811 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100018, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
@@ -1591,9 +2663,49 @@ MonoBehaviour:
   toggleInner: {fileID: 633836669}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1851874814}
+        m_MethodName: OnClick
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: Hecomi.HoloLensPlayground.Toggle+ValueChangeEvent, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &1851874814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1851874811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef53c106f5ae0ff4d9431d269fb22d38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectPrefab: {fileID: 1452419728463548, guid: 5af983825448a3640a92f660330a28a3,
+    type: 2}
+  effectMesh: {fileID: 633836672}
+--- !u!114 &1851874815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1851874811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33bbb03bf082eff429257fda86d9739c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amp: 0.01
+  freq: 3
+  dampingTime: 0.2
+  target: {fileID: 0}
 --- !u!1 &1857112800 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100002, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
@@ -1713,6 +2825,11 @@ MonoBehaviour:
 GameObject:
   m_PrefabParentObject: {fileID: 100026, guid: 873c9a5d31a8422428380d227e987cac, type: 3}
   m_PrefabInternal: {fileID: 1524158170}
+--- !u!33 &1985325035 stripped
+MeshFilter:
+  m_PrefabParentObject: {fileID: 3300010, guid: 873c9a5d31a8422428380d227e987cac,
+    type: 3}
+  m_PrefabInternal: {fileID: 1524158170}
 --- !u!1001 &2061445580
 Prefab:
   m_ObjectHideFlags: 0
@@ -1814,9 +2931,49 @@ MonoBehaviour:
   toggleInner: {fileID: 765655517}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2115598810}
+        m_MethodName: OnClick
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: Hecomi.HoloLensPlayground.Toggle+ValueChangeEvent, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &2115598809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2115598806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33bbb03bf082eff429257fda86d9739c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amp: 0.01
+  freq: 3
+  dampingTime: 0.3
+  target: {fileID: 0}
+--- !u!114 &2115598810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2115598806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef53c106f5ae0ff4d9431d269fb22d38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectPrefab: {fileID: 1452419728463548, guid: 5af983825448a3640a92f660330a28a3,
+    type: 2}
+  effectMesh: {fileID: 765655520}
 --- !u!1 &2117590090 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100370, guid: 873c9a5d31a8422428380d227e987cac, type: 3}

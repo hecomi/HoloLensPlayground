@@ -84,7 +84,7 @@ Material:
       second: 0
     - first:
         name: _EndDistance
-      second: 0.2
+      second: 0.3
     - first:
         name: _GlossMapScale
       second: 1
@@ -113,6 +113,12 @@ Material:
         name: _Parallax
       second: 0.02
     - first:
+        name: _SmoothStepEnd
+      second: 1
+    - first:
+        name: _SmoothStepStart
+      second: 0
+    - first:
         name: _SmoothnessTextureChannel
       second: 0
     - first:
@@ -123,7 +129,7 @@ Material:
       second: 1
     - first:
         name: _StartDistance
-      second: 0.5
+      second: 0.6
     - first:
         name: _UVSec
       second: 0
