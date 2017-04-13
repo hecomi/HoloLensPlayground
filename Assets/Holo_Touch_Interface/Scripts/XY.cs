@@ -23,10 +23,9 @@ public class XY : MonoBehaviour
     float yRange = 0.1f;
 
     [System.Serializable]
-    class ValueChangeEvent : UnityEvent<Vector2> {}
+    public class ValueChangeEvent : UnityEvent<Vector2> {}
 
-    [SerializeField]
-    ValueChangeEvent onValueChanged = new ValueChangeEvent();
+    public ValueChangeEvent onValueChanged = new ValueChangeEvent();
 
     private Vector2 value_ = Vector2.zero;
     public Vector2 value

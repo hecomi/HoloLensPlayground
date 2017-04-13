@@ -57,6 +57,31 @@ public class TouchOscUI2 : MonoBehaviour
             case "toggle4" : toggle4.value = value; break;
         }
     }
+
+    public Push GetPush(int n)
+    {
+        switch (n)
+        {
+            case 1: return push1;
+            case 2: return push2;
+            case 3: return push3;
+            case 4: return push4;
+            case 5: return push5;
+            case 6: return push6;
+            case 7: return push7;
+            case 8: return push8;
+            case 9: return push9;
+            case 10: return push10;
+            case 11: return push11;
+            case 12: return push12;
+            case 13: return push13;
+            case 14: return push14;
+            case 15: return push15;
+            case 16: return push16;
+        }
+
+        return null;
+    }
 }
 
 }
