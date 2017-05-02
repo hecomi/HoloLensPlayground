@@ -6,4 +6,5 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Holo_Touch_Interface/Scenes/iPad.unity
+    path: Assets/Holo_Stencil_Window/Scenes/Pattern 1.unity
+    guid: d472da2b3f5257d41ac89f176c56da9d

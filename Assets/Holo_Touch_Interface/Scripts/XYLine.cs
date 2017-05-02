@@ -35,7 +35,7 @@ public class XYLine : MonoBehaviour
     void Awake()
     {
         line_ = GetComponent<LineRenderer>();
-        line_.numPositions = 0;
+        line_.positionCount = 0;
     }
 
     void Update()
@@ -74,8 +74,8 @@ public class XYLine : MonoBehaviour
 
     public void Add(Vector3 pos)
     {
-        var index = line_.numPositions;
-        ++line_.numPositions;
+        var index = line_.positionCount;
+        ++line_.positionCount;
         line_.SetPosition(index, pos);
     }
 

@@ -84,7 +84,7 @@ Material:
       second: 0
     - first:
         name: _EndDistance
-      second: 0.3
+      second: 0
     - first:
         name: _GlossMapScale
       second: 1
@@ -129,7 +129,7 @@ Material:
       second: 1
     - first:
         name: _StartDistance
-      second: 0.6
+      second: 0.2
     - first:
         name: _UVSec
       second: 0

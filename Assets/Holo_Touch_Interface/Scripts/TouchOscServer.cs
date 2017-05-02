@@ -56,10 +56,9 @@ public class TouchOscServer : MonoBehaviour
 
     async void Start()
     {
-        socket_ = new DatagramSocket();
-        socket_.MessageReceived += OnMessage;
-
         try {
+            socket_ = new DatagramSocket();
+            socket_.MessageReceived += OnMessage;
             await socket_.BindServiceNameAsync(listenPort.ToString());
         } catch (System.Exception e) {
             Debug.LogError(e.ToString());

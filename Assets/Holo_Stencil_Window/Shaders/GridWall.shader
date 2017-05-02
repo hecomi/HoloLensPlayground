@@ -1,4 +1,6 @@
-﻿Shader "HoloLens/GridWall"
+﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+Shader "HoloLens/GridWall"
 {
 
 Properties
@@ -37,7 +39,7 @@ v2f vert(appdata_base v)
 {
     UNITY_SETUP_INSTANCE_ID(v);
     v2f o;
-    o.vertex = mul(UNITY_MATRIX_MVP, v.vertex);
+    o.vertex = UnityObjectToClipPos(v.vertex);
     o.vertex = UnityObjectToClipPos(v.vertex);
     o.worldPos = mul(unity_ObjectToWorld, v.vertex);
     UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o);
