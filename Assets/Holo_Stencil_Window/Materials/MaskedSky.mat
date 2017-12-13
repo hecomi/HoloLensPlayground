@@ -10,34 +10,24 @@ Material:
   m_Shader: {fileID: 4800000, guid: 85561a5221554fc40ba2b515081d28d2, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
+  disabledShaderPasses: []
   m_SavedProperties:
-    serializedVersion: 2
+    serializedVersion: 3
     m_TexEnvs:
-    - first:
-        name: _Cube
-      second:
-        m_Texture: {fileID: 8900000, guid: b9fe8c1d948a549308a3ec961aa34fde, type: 3}
+    - _Cube:
+        m_Texture: {fileID: 8900000, guid: 9693d50a34bca46c6bbcb5b38ec4213a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _Tex
-      second:
+    - _Tex:
         m_Texture: {fileID: 8900000, guid: b9fe8c1d948a549308a3ec961aa34fde, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - first:
-        name: _Exposure
-      second: 1
-    - first:
-        name: _Mask
-      second: 1
-    - first:
-        name: _Rotation
-      second: 0
+    - _Exposure: 1
+    - _Mask: 1
+    - _Rotation: 0
     m_Colors:
-    - first:
-        name: _Tint
-      second: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+    - _Tint: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}

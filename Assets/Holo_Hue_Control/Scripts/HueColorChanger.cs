@@ -34,7 +34,7 @@ public class HueColorChanger : MonoBehaviour, IInputClickHandler
         var req = UnityWebRequest.Get(apiUrl);
         yield return req.Send();
 
-        if (req.isError) {
+        if (req.isNetworkError) {
             Debug.LogError(req.error);
         }
     }

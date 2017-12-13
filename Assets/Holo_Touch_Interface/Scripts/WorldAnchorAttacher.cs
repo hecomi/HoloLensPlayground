@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using UnityEngine.VR.WSA;
+
 using HoloToolkit.Unity.InputModule;
 
 namespace Hecomi.HoloLensPlayground
@@ -26,7 +26,7 @@ public class WorldAnchorAttacher : MonoBehaviour
 
     void OnStartDragging()
     {
-        var anchor = GetComponent<WorldAnchor>();
+        var anchor = GetComponent<UnityEngine.XR.WSA.WorldAnchor>();
         if (anchor) {
             DestroyImmediate(anchor);
         }
@@ -34,9 +34,9 @@ public class WorldAnchorAttacher : MonoBehaviour
 
     void OnStopDragging()
     {
-        var anchor = GetComponent<WorldAnchor>();
+        var anchor = GetComponent<UnityEngine.XR.WSA.WorldAnchor>();
         if (!anchor) {
-            gameObject.AddComponent<WorldAnchor>();
+            gameObject.AddComponent<UnityEngine.XR.WSA.WorldAnchor>();
         }
     }
 }

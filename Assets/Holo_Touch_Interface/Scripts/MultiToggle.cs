@@ -36,7 +36,7 @@ public class MultiToggle : MonoBehaviour
         for (int y = 0; y < 8; ++y) {
             for (int x = 0; x < 8; ++x) {
                 var name = string.Format("pToggle{0}_{1}", y + 1, x + 1);
-                var obj = transform.FindChild(name);
+                var obj = transform.Find(name);
                 Assert.IsNotNull(obj);
                 objects_[y, x] = obj.gameObject;
                 this[y, x] = 0f;

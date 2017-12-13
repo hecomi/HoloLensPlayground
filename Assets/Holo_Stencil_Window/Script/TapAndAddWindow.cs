@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using UnityEngine.VR.WSA.Input;
+
 
 public class TapAndAddWindow : MonoBehaviour
 {
@@ -11,15 +11,15 @@ public class TapAndAddWindow : MonoBehaviour
 
     void OnEnable()
     {
-        InteractionManager.SourcePressed += OnSourcePressed;
+        UnityEngine.XR.WSA.Input.InteractionManager.SourcePressed += OnSourcePressed;
     }
 
     void OnDisable()
     {
-        InteractionManager.SourcePressed -= OnSourcePressed;
+        UnityEngine.XR.WSA.Input.InteractionManager.SourcePressed -= OnSourcePressed;
     }
 
-    void OnSourcePressed(InteractionSourceState state)
+    void OnSourcePressed(UnityEngine.XR.WSA.Input.InteractionSourceState state)
     {
         var from = Camera.main.transform.position;
         var to = Camera.main.transform.forward;
