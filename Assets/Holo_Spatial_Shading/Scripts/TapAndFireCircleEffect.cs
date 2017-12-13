@@ -5,15 +5,15 @@ public class TapAndFireCircleEffect : MonoBehaviour
 {
     void OnEnable()
     {
-        UnityEngine.XR.WSA.Input.InteractionManager.SourcePressed += OnSourcePressed;
+        UnityEngine.XR.WSA.Input.InteractionManager.InteractionSourcePressed += OnSourcePressed;
     }
 
     void OnDisable()
     {
-        UnityEngine.XR.WSA.Input.InteractionManager.SourcePressed -= OnSourcePressed;
+        UnityEngine.XR.WSA.Input.InteractionManager.InteractionSourcePressed -= OnSourcePressed;
     }
 
-    void OnSourcePressed(UnityEngine.XR.WSA.Input.InteractionSourceState state)
+    void OnSourcePressed(UnityEngine.XR.WSA.Input.InteractionSourcePressedEventArgs state)
     {
         var from = Camera.main.transform.position;
         var to = Camera.main.transform.forward;
